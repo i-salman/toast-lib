@@ -5,7 +5,11 @@ import android.widget.Toast
 
 class ToastMessage {
 
-    fun showToast(context: Context, message: String, duration: Int) {
-        Toast.makeText(context, message, duration).show()
+    fun showShortToast(context: Context, message: String) {
+        Toast.makeText(context, message, Toast.LENGTH_SHORT).show()
+    }
+
+    fun showLongToast(context: Context, message: String) {
+        Toast.makeText(context, message, Toast.LENGTH_LONG).show()
     }
 }
